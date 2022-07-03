@@ -255,6 +255,7 @@ AC_CONFIG_FILES([
 	source/Makefile
 		source/SoundTouch/Makefile
 		source/SoundStretch/Makefile
+		source/Zic/Makefile
 	include/Makefile
 ])
 

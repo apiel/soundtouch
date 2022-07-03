@@ -1,5 +1,3 @@
-# $Id: bootstrap 43 2008-12-25 17:54:41Z oparviai $
-
 #!/bin/sh
 
 if [ "$1" = "--clean" ]
