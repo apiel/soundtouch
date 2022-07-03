@@ -311,7 +311,13 @@ int main(const int nParams, const char * const paramStr[])
 
         // clock_t cs = clock();    // for benchmarking processing duration
         // Process the sound
-        process(&soundTouch, inFile, outFile);
+
+        for (int i = 0; i < 48; i++)
+        {
+            inFile->rewind();
+            soundTouch.setPitchSemiTones((float)i - 24.0f);
+            process(&soundTouch, inFile, outFile);
+        }
         // clock_t ce = clock();    // for benchmarking processing duration
         // printf("duration: %lf\n", (double)(ce-cs)/CLOCKS_PER_SEC);
 
